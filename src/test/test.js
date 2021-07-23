@@ -66,7 +66,7 @@ describe('request body validation test', () => {
   test('success check', () => {
     const validation = app.validator({
       startDate: '2016-02-02',
-      endDate: '2017-12-15',
+      endDate: '2016-02-07',
       minCount: 1000,
       maxCount: 2200,
     });
@@ -83,6 +83,6 @@ describe('query data test', () => {
       minCount: 1000,
       maxCount: 3000,
     });
-    expect(queryRes.length).to.greaterThan(0)
-  },30000);
+    expect(queryRes.length).to.greaterThan(0);
+  }, 30000);
 });
