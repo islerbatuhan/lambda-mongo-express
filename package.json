@@ -1,0 +1,25 @@
+{
+  "name": "services-getir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.810.0",
+    "chai": "^4.3.4",
+    "express": "^4.17.1",
+    "got": "^11.8.1",
+    "mongoose": "^5.13.3",
+    "serverless": "^2.46.0",
+    "serverless-http": "^2.7.0",
+    "source-map-support": "^0.5.19"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "source-map": "^0.7.3"
+  }
+}

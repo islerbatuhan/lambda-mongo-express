@@ -1,0 +1,30 @@
+app: batuhan-getir
+service: services-getir
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: eu-central-1
+  memorySize: 128
+  timeout: 30
+  environment:
+    REGION: ${self:provider.region}
+
+package:
+  excludeDevDependencies: false
+  individually: true
+
+functions:
+  getirMongo:
+    handler: src/app.handler
+    name: ${self:provider.stage}-getirMongo
+    timeout: 30
+    events:
+      - http:
+          path: /getirMongo
+          method: post
+          cors: true
+    environment:
+      MONGO_URL: 'mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true'
