@@ -1,7 +1,8 @@
 # lambda-mongo-express
-Code piece for serverless project. AWS lambda, AWS Api Gateway, Express and MongoDb
+Code piece for a serverless project that creates a rest endpoint using lambda and express, and query data from MongoDB.
 
-# How to deploy
+AWS Lambda, AWS Api Gateway, Express and MongoDb
 
+# How to deploy with serverless
 - npm install
 - serverless deploy
