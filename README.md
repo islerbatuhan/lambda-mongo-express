@@ -6,3 +6,6 @@ AWS Lambda, AWS Api Gateway, Express and MongoDb
 # How to deploy with serverless
 - npm install
 - serverless deploy
+
+# How to test
+- npm run
